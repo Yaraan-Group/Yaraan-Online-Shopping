@@ -20,23 +20,22 @@
 
 <section class="login">
 
-    <form action="">
+    <form action="" method="get" onsubmit="return validData()">
         <h3>login now</h3>
-        <input type="email" name="" placeholder="Enter your email" id="" class="box" required>
-        <input type="password" name="" placeholder="Enter your password" id="" class="box" required>
+        <input type="email" name="email" placeholder="Enter your email" id="email" class="box">
+        <input type="password" name="password" placeholder="Enter your password" id="password" class="box">
         <div class="remember">
             <input type="checkbox" name="" id="remember-me">
             <label for="remember-me"> Remember me </label>
         </div>
-        <input type="submit" value="login now" class="btn">
+        <input type="submit" value="login now" class="btn" onclick="open1()">
         <p>don't have an account?</p>
         <a href="register.html" class="btn link">Register now</a>
     </form>
-
 </section>
 
 <!-- login form section ends  -->
-
+<script src="js/script.js"></script>
 
 </body>
 </html>

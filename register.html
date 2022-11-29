@@ -19,13 +19,13 @@
 
 <section class="register">
 
-    <form action="">
+    <form action="" onsubmit="return register_validData()">
         <h3>register now</h3>
-        <input type="text" name="" placeholder="Enter your name" id="" class="box" required>
-        <input type="email" name="" placeholder="Enter your email" id="" class="box" required>
-        <input type="password" name="" placeholder="Enter your password" id="" class="box" required>
-        <input type="password" name="" placeholder="re-enter your password" id="" class="box" required>
-        <input type="submit" value="Register now" class="btn">
+        <input type="text" name="name" placeholder="Enter your name" id="name" class="box">
+        <input type="email" name="email" placeholder="Enter your email" id="email" class="box">
+        <input type="password" name="password" placeholder="Enter your password" id="password" class="box">
+        <input type="password" name="password" placeholder="re-enter your password" id="password" class="box">
+        <input type="submit" value="Register now" class="btn" onclick="open2()">
         <p>already have an account?</p>
         <a href="login.html" class="btn link">login now</a>
     </form>
@@ -33,7 +33,7 @@
 </section>
 
 <!-- register form section ends  -->
-
+<script src="js/script.js"></script>
 
 </body>
 </html>

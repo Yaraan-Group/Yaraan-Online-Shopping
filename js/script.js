@@ -50,3 +50,43 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+
+// form validation 
+function validData(){
+    email = document.getElementById("email").value
+    password = document.getElementById("password").value
+
+    if (email == "" || password == ""){
+
+        alert("email and password field most not be empty!")
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+function register_validData(){
+    email = document.getElementById("email").value
+    password = document.getElementById("password").value
+    name = document.getElementById("name").value
+
+    if (email == "" || password == "" || name ==""){
+        alert("email, password and name  field most not be empty!")
+        return false;
+    }
+    else{
+        return true;
+    } 
+}
+
+function open1(){
+    window.open("home.html")
+}
+
+function open2(){
+    window.open("login.html")
+}
+
+  document.cookie="username=khan;expires=Sat,26 Nov 2022 12:0:0 UTC";
