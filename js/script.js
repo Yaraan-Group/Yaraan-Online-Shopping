@@ -25,31 +25,6 @@ document.querySelectorAll('.accordion-container .accordion').forEach(accordion =
     }
 });
 
-var swiper = new Swiper(".home-slider", {
-    loop:true,
-    grabCursor:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-});
-
-var swiper = new Swiper(".review-slider", {
-    loop:true,
-    grabCursor:true,
-    spaceBetween: 20,
-    breakpoints: {
-        450: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-    },
-});
 
 
 // form validation 
@@ -78,15 +53,6 @@ function register_validData(){
     }
     else{
         return true;
-    } 
+    }
+     
 }
-
-function open1(){
-    window.open("home.html")
-}
-
-function open2(){
-    window.open("login.html")
-}
-
-  document.cookie="username=khan;expires=Sat,26 Nov 2022 12:0:0 UTC";
